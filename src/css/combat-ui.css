@@ -1,0 +1,206 @@
+/* Combat UI Styles */
+.combat-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allow clicks to pass through to the game */
+    z-index: 10;
+}
+
+.combat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(26, 32, 48, 0.9);
+    pointer-events: auto;
+}
+
+.entity-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.entity-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.entity-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 2px solid #3a4050;
+    background-size: cover;
+    background-position: center;
+}
+
+.enemy-avatar {
+    background-color: #e74c3c;
+}
+
+.player-avatar {
+    background-color: #2ecc71;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.entity-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.health-bar-container {
+    height: 12px;
+    background-color: #2a3040;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.health-bar {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+}
+
+.enemy-health {
+    background-color: #e74c3c;
+}
+
+.player-health {
+    background-color: #2ecc71;
+}
+
+.combat-status {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+.entity-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #3a4050;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.hp-value {
+    color: #2ecc71;
+}
+
+.attack-value {
+    color: #e74c3c;
+}
+
+.defense-value {
+    color: #3498db;
+}
+
+.combat-footer {
+    background-color: rgba(26, 32, 48, 0.9);
+    padding: 15px;
+    margin-top: auto;
+    pointer-events: auto;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.skill-slot {
+    width: 18%;
+    background-color: #2a3040;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3a4050;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: white;
+}
+
+.skill-meter {
+    width: 90%;
+    height: 6px;
+    background-color: #3a4050;
+    border-radius: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.color-red { border-bottom: 3px solid #e74c3c; }
+.color-blue { border-bottom: 3px solid #3498db; }
+.color-green { border-bottom: 3px solid #2ecc71; }
+.color-yellow { border-bottom: 3px solid #f1c40f; }
+.color-purple { border-bottom: 3px solid #9b59b6; }
+
+.fill-red { background-color: #e74c3c; }
+.fill-blue { background-color: #3498db; }
+.fill-green { background-color: #2ecc71; }
+.fill-yellow { background-color: #f1c40f; }
+.fill-purple { background-color: #9b59b6; }

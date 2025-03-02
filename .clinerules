@@ -1,0 +1,21 @@
+# .clinerules for Phaser 3 Game (Web + Mobile)
+
+- This is a Phaser 3 game built with JavaScript (ES6 modules) targeting web browsers and mobile devices.
+- User Phaser 3 best practices when planning and coding.
+- Use single quotes for strings and 2-space indentation. Always end statements with semicolons.
+- Game scenes are in `/src/scenes/` (e.g., PreloadScene, MainScene). Each scene extends Phaser.Scene.
+- Assets (images, audio) are in `/assets/`. Load them in the preload() method of scenes.
+- Keep game logic modular: utility functions go in `/src/utils/`.
+- Optimize for mobile: avoid heavy loops or unneeded DOM manipulation outside Phaser’s canvas.
+- Before suggesting changes, ensure the game runs with `npm start` (web) or check mobile build compatibility.
+- Suggest Phaser best practices unless I specify otherwise.
+- Do not edit `/dist/` or `/node_modules/`—those are generated or managed externally.
+- If adding assets, remind me to update the preload logic and check file sizes for mobile performance.
+- Propose changes in small, testable chunks (e.g., one scene or feature at a time).
+- Try to search for the simple solution first, we want the simplest approach that will work
+- Don't duplicate where data is stored, have one source of truth for data values.
+- If code is being duplicated, look to make a reusable and testable function
+- when finished a task stop working. don't do more than one task at a time.
+- Do not edit .nvmrc 
+- Never edit a file name Grid.js
+- Prefer Phaser's Registry system over custom state management solutions

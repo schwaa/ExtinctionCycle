@@ -1,0 +1,31 @@
+{
+  "enemies": [
+    {
+      "id": "zombie_shambler",
+      "name": "Zombie Shambler",
+      "level": 1,
+      "maxHp": 45,
+      "baseAttack": 7,
+      "baseDefense": 2,
+      "sprite": "zombie1"
+    },
+    {
+      "id": "zombie_crawler",
+      "name": "Zombie Crawler",
+      "level": 1,
+      "maxHp": 40,
+      "baseAttack": 9,
+      "baseDefense": 1,
+      "sprite": "zombie2"
+    },
+    {
+      "id": "zombie_lurker",
+      "name": "Zombie Lurker",
+      "level": 1,
+      "maxHp": 55,
+      "baseAttack": 6,
+      "baseDefense": 4,
+      "sprite": "zombie3"
+    }
+  ]
+}

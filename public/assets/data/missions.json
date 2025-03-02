@@ -1,0 +1,49 @@
+{
+    "mainMissions": [
+      {
+        "id": "subway_clear",
+        "title": "Clear subway station",
+        "description": "Zombies have overrun the downtown subway station. Clear them out to secure a new supply route.",
+        "rewards": {
+          "exp": 5,
+          "coins": 10,
+          "item": "Shotgun Blueprint"
+        },
+        "requiredLevel": 1,
+        "status": "available",
+        "battles": [
+          {
+            "id": "subway_entrance",
+            "description": "Clear the entrance of zombies",
+            "level": 1
+          },
+          {
+            "id": "subway_platform",
+            "description": "Clear the subway platform",
+            "level": 1
+          }
+        ]
+      }
+    ],
+    "sideQuests": [
+      {
+        "id": "medical_supplies",
+        "title": "Medical Emergency",
+        "description": "Search the pharmacy for supplies",
+        "rewards": {
+          "exp": 3,
+          "coins": 5,
+          "item": "First Aid Kit"
+        },
+        "requiredLevel": 1,
+        "status": "available",
+        "battles": [
+          {
+            "id": "pharmacy_front",
+            "description": "Get past the infected at the entrance",
+            "level": 1
+          }
+        ]
+      }
+    ]
+  }
